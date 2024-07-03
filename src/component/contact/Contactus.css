@@ -1,0 +1,151 @@
+/* src/ContactUs.css */
+.hero-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 200px; /* Adjust the height to make the image smaller */
+  object-fit: cover;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px; /* Adjust the font size if needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.contact-form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.get-in-touch {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%; /* Set width to 100% */
+  max-width: 200px; /* Add a max-width to limit the button size */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+.contact-us-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.company-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.address-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.address {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.address h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.address p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 150px; /* Reduce the height for smaller screens */
+  }
+
+  .hero-title {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .address {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    height: 120px; /* Further reduce the height for very small screens */
+  }
+
+  .hero-title {
+    font-size: 24px; /* Further adjust font size for very small screens */
+  }
+
+  .company-description {
+    font-size: 14px;
+  }
+}
